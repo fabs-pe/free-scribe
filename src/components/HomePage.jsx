@@ -14,8 +14,7 @@ export default function HomePage(props) {
         </button>
         <p className='text-base'>Or <label className='text-blue-400 cursor-pointer hover:text-blue-600 duration-200'>upload 
             <input onChange={(e) => { const tempFile = e.target.files[0]; setFile(tempFile)}} 
-                className='hidden' type='file' accept='.mp3, .wave' /></label>
-                a mp3 file</p>
+                className='hidden' type='file' accept='.mp3, .wave' /></label> a mp3 file</p>
         <p className='italic text-slate-500 '>Free Now Free Forever</p>
     </main>
   )
