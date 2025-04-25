@@ -1,5 +1,9 @@
-// import { pipeline } from '@xenova/transformers'
-// import { MessageTypes } from './presets'
+import { pipeline, env } from '@xenova/transformers'
+import { MessageTypes } from './presets'
+
+// disable local models
+env.allowLocalModels = false;
+env.useBrowserCache = false;
 
 class MyTranscriptionPipeline {
     static task = 'automatic-speech-recognition'
